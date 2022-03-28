@@ -1,2 +1,2 @@
 # javascript-backend
-javascript backend °øºÎ¿ë ·¹Æ÷ÀÔ´Ï´Ù.
+javascript backend ê³µë¶€ìš© ë ˆí¬ì…ë‹ˆë‹¤.
