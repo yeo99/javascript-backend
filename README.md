@@ -1,2 +1,2 @@
-# nodejs-practice
-NodeJS 공부용 레포지터리입니다.
+# javascript-backend
+javascript backend 공부용 레포입니다.
