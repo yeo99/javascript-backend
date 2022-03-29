@@ -1,0 +1,28 @@
+{% set title = "관리자 리스트" %}
+<!-- base.html을 만들어 두고 extends로 불러옴 -->
+<!-- 
+    extends로 base.html을 불러와서 공통된 레이아웃을 사용한 다음
+    block content와 endblock사이에 이 페이지에 그려져야 할 화면을 넣어준다
+ -->
+{% extends "layout/base.html" %}
+{% block content -%}
+    <table class="table table-bordered table-hover">
+        <tr>
+            <th>제목</th>
+            <th>작성일</th>
+            <th>삭제</th>
+        </tr>
+        <tr>
+            <td>제품 이름</td>
+            <td>
+                2020-03-07
+            </td>
+            <td>
+                <a href="#" class="btn btn-danger">삭제</a>
+            </td>
+        </tr>
+    </table>
+
+    <a href="/admin/products/write" class="btn btn-default">작성하기</a>
+
+{% endblock %} 
