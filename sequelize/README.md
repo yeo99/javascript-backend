@@ -63,3 +63,15 @@ npm install mysql2
 npm install sequelizer
 ```
 .env 파일에 공백이 없도록 주의하자.
+
+
+
+
+
+
+### 모델 작성
+models/products.js에 모델 작성
+```
+return db.sequelize.sync();
+```
+를 app.js에 입력하여 DB와 sync

@@ -23,6 +23,7 @@ process.env.DB_USER, process.env.DB_PASSWORD,{
 let db = [];
 
 fs.readdirSync(__dirname)
+    // index.js를 제외하고 테이블을 생성해주는 부분
     .filter(file => {
         return file.indexOf('.js')&& file !== 'index.js'
     })
