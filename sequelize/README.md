@@ -75,3 +75,21 @@ models/products.js에 모델 작성
 return db.sequelize.sync();
 ```
 를 app.js에 입력하여 DB와 sync
+환경에 따라 .env 파일의 DATABASE = "" 부분을 바꿔줘야 할 수도 있음.
+
+
+
+
+
+
+### DB 입력(insert)
+원래는 해당 프로젝트에서 npm start하면
+GET 방식으로 /admin/products/write를 불러온다.
+이번엔 POST /admin/products/write
+
+
+
+
+
+
+### DB 조회

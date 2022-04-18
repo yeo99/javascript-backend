@@ -1,5 +1,5 @@
-// const moment = require('moment');
-
+const moment = require('moment');
+// DB ¸ðµ¨ »ý¼º
 module.exports = (sequelize, DataTypes) => {
     const Products = sequelize.define('Products',
         {
