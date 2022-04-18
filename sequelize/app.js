@@ -2,6 +2,7 @@ const express = require('express');
 const nunjucks = require('nunjucks');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
+const models = require('./models');
 
 // db 관련
 const db = require('./models');

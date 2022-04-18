@@ -1,10 +1,12 @@
 var Sequelize = require('sequelize');
 var path = require('path');
 var fs = require('fs');
+// dotenv를 require로 가져옴
 var dotenv = require('dotenv');
 
 dotenv.config(); //LOAD CONFIG
 
+// process.env.[환경변수명] 으로 필요한 정보를 불러옴
 const sequelize = new Sequelize( process.env.DATABASE,
 process.env.DB_USER, process.env.DB_PASSWORD,{
     host: process.env.DB_HOST,
@@ -32,6 +34,7 @@ fs.readdirSync(__dirname)
 
 Object.keys(db).forEach(modelName => {
     if("associate" in db[modelName]){
+        // 테이블간의 관계도, 외래키 관련
         db[modelName].associate(db);
     }
 });
